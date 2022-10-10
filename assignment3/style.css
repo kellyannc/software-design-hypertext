@@ -1,10 +1,72 @@
-body {
-  color: aqua;
+body { margin-left: 9%;
+  margin-right: 9%;
 }
 
 h1 {
- color:blueviolet;
- font-size:100px;
-  font-family: Impact, Haettenschweiler
+ color:rgb(90, 16, 160);
+ font-size:80px;
+  font-family: Impact, Haettenschweiler;
+margin-bottom:-3%;
+/* text-align:var(10px); */
 }
 
+h2 {
+  color:rgb(232, 39, 116);
+  font-size:50px;
+   font-family: Impact, Haettenschweiler;
+   margin-bottom:-1%;
+ }
+
+; h3 {
+  color:rgb(37, 30, 33);
+  font-size:20px;
+   font-family: Impact, Haettenschweiler;
+ }
+
+p {
+  color: rgb(90, 16, 160);
+  font-size:20px;
+   font-family:'Times New Roman', Times, serif;
+   margin-right: 81%;
+   margin-bottom:-6%;
+  }
+
+  .earthling
+  {
+    margin-right: 10%;
+    margin-bottom:2%;
+    color:rgb(12, 44, 38);
+    
+    }
+
+    .homepagetitle
+    {
+      margin-right:70%;
+      margin-bottom: -5%;
+      
+      }
+
+      .homepagetext
+      {
+        color: rgb(232, 39, 116);;
+        font-size:30px;
+        font-family: Impact, Haettenschweiler;
+         margin-right: 66%;
+         margin-top:-10%;
+         margin-bottom:-1%;
+         text-align:left;
+        }
+ 
+
+
+
+
+
+
+
+
+/* .imagemapDiv {
+  border: 2px inset rgb(181, 0, 0);
+  background-color: rgb(166, 225, 241);    
+  text-align: center;
+} */
