@@ -1,49 +1,49 @@
 
 // // ASSIGNMENT 7 EXERCISES
 
-let colorlist = ["gold", "yellow", "turquoise", "red"];
+// let colorlist = ["gold", "yellow", "turquoise", "red"];
 
-function setup() {
-    //this function runs once when the webpage is loaded
-    //within this function, you can use p5
-    createCanvas(windowWidth * 0.8, windowHeight * 0.8)
+// function setup() {
+//     //this function runs once when the webpage is loaded
+//     //within this function, you can use p5
+//     createCanvas(windowWidth * 0.8, windowHeight * 0.8)
 
  
-} 
+// } 
 
-// background(255,120,255);
+// // background(255,120,255);
 
-//  for (let x = 10; x <= width; x += 50) {
-//   fill(0, 200, 0);
-//  line(x, 400, 20, 20);
+// //  for (let x = 10; x <= width; x += 50) {
+// //   fill(0, 200, 0);
+// //  line(x, 400, 20, 20);
 
+// // }
+
+// function draw() {
+//   //this functions runs many times every second!
+//   //within this function, you can use p5 syntax
+//   background(10, 30, 60);
+//   noStroke();
+//   fill(random(colorlist));
+//   ellipse(mouseX, mouseY, 30,30);
+//   rect(mouseX, 10, 10, 10);
+
+//   for (let x = 0; x <= width; x += 50) {
+//     fill(0, 255, 200);
+//     line(x, 300, 12, 10);
+//     stroke(random(colorlist));
+//   }
+
+//   for (let x = 0; x <= width; x += 50) {
+//     fill(255, 0, 200);
+//     ellipse(x, 300, 12, 25);
+//   }
+
+//   for (let x = 25; x <= width; x += 50) {
+//     fill(0, 0, 200);
+//     ellipse(x, 300, 12, 25);
+//   }
 // }
-
-function draw() {
-  //this functions runs many times every second!
-  //within this function, you can use p5 syntax
-  background(10, 30, 60);
-  noStroke();
-  fill(random(colorlist));
-  ellipse(mouseX, mouseY, 30,30);
-  rect(mouseX, 10, 10, 10);
-
-  for (let x = 0; x <= width; x += 50) {
-    fill(0, 255, 200);
-    line(x, 300, 12, 10);
-    stroke(random(colorlist));
-  }
-
-  for (let x = 0; x <= width; x += 50) {
-    fill(255, 0, 200);
-    ellipse(x, 300, 12, 25);
-  }
-
-  for (let x = 25; x <= width; x += 50) {
-    fill(0, 0, 200);
-    ellipse(x, 300, 12, 25);
-  }
-}
 
 // ASSIGNMENT 7 EXERCISES
 
@@ -61,7 +61,7 @@ function draw() {
 // }
 
 
-// ASSIGNMENT 7 Exercises -FACE
+// // ASSIGNMENT 7 Exercises -FACE
 
 // function setup () {
 //     createCanvas(640, 360);
@@ -293,70 +293,70 @@ function draw() {
 // // Assignment 8 GRASS CODE - each blade of grass with a randomly-chosen shade of green
 
 
-// let r, g, b;
+let r, g, b;
 
-// function setup() {
-//   console.log("setup, grass");
-//   createCanvas(windowWidth, windowHeight);
-//   r = random(255);
-//   g = random(255);
-//   b = random(255);
+function setup() {
+  console.log("setup, grass");
+  createCanvas(windowWidth, windowHeight);
+  r = random(255);
+  g = random(255);
+  b = random(255);
 
-//   noStroke();
-//   fill(255, 255, 255);
+  noStroke();
+  fill(255, 255, 255);
 
-//   noLoop();
-// }
+  noLoop();
+}
 
-// function draw() {
-//   console.log("draw, grass");
-//   // background(40, 40, 40);
+function draw() {
+  console.log("draw, grass");
+  // background(40, 40, 40);
 
-//   fill(r, g, b);
-//   rect(0, height * 0.5, width, height * 0.5);
+  fill(r, g, b);
+  rect(0, height * 0.5, width, height * 0.5);
 
-//   stroke(r, g, b)
-//   // color(255, 0, 255);
+  stroke(r, g, b)
+  // color(255, 0, 255);
 
-//   // drawGrass(0, height * 0.5 - 100, width, 300);
-//   // //stroke(240, 240, 240);
-//   drawGrass(10, height * 0.5 - 100, width, 100);
-//   //drawGrass(0, height * 0.5 - 100, width, 100);
-// }
+  // drawGrass(0, height * 0.5 - 100, width, 300);
+  // //stroke(240, 240, 240);
+  drawGrass(10, height * 0.5 - 100, width, 100);
+  //drawGrass(0, height * 0.5 - 100, width, 100);
+}
 
-// function drawGrass(left, top, width, height) {
-//   // loop from the left to the right, one pixel per step
-//   for (let x = left; x < left + width; x++) {
-//     // x and y are the base of the blade of grass
-//     const y = top + height;
+function drawGrass(left, top, width, height) {
+  // loop from the left to the right, one pixel per step
+  for (let x = left; x < left + width; x++) {
+    // x and y are the base of the blade of grass
+    const y = top + height;
 
-//     // height of the grass
-//     // pick lowest of three "rolls" to bias strongly towards short blades
-//     // with occasional long ones
-
-    
-//     const bladeHeight = max(
-//       random(0, height),
-//       random(0, height),
-//       random(0, height)
-//     );
-
-//     // horizontal offset of top of blade relative to base
-//     // average two "rolls" to bias towards middle
-//     let bladeLean = (random(-1, 1) + random(-1, 1)) * 3;
-//     // scale lean by height so that shorter blades aren't more leany
-//     bladeLean = bladeLean * bladeHeight;
-//     // scaling factor to to taste
-//     bladeLean = bladeLean * 0.2;
+    // height of the grass
+    // pick lowest of three "rolls" to bias strongly towards short blades
+    // with occasional long ones
 
     
-//     ////
-//     //CHANGE THE COLOR OF THE GRASS
-//     ////
-// 		let randomGreen = color(0, random(255), 0);
-//     stroke(randomGreen);
-//     line(x, y, x + bladeLean, y - bladeHeight);
-//   }
-// }
+    const bladeHeight = max(
+      random(0, height),
+      random(0, height),
+      random(0, height)
+    );
+
+    // horizontal offset of top of blade relative to base
+    // average two "rolls" to bias towards middle
+    let bladeLean = (random(-1, 1) + random(-1, 1)) * 3;
+    // scale lean by height so that shorter blades aren't more leany
+    bladeLean = bladeLean * bladeHeight;
+    // scaling factor to to taste
+    bladeLean = bladeLean * 0.2;
+
+    
+    ////
+    //CHANGE THE COLOR OF THE GRASS
+    ////
+		let randomGreen = color(0, random(255), 0);
+    stroke(randomGreen);
+    line(x, y, x + bladeLean, y - bladeHeight);
+  }
+}
 
 
