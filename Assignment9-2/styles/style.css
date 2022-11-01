@@ -12,6 +12,14 @@ main {
     align-items: center;
 }
 
+h1 {
+    font-weight: 900;
+    font-size: .7cm;
+    color: rgb(17, 7, 27);
+}
+
 h2 {
-    font-weight: 400;
+    font-weight: 100;
+    font-size: .5cm;
+    color: rgb(50, 13, 92);
 }
