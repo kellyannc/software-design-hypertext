@@ -1,4 +1,3 @@
-
 let r, g, b;
 
 function setup() {
@@ -64,5 +63,3 @@ function drawGrass(left, top, width, height) {
     line(x, y, x + bladeLean, y - bladeHeight);
   }
 }
-
-
