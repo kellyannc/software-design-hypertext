@@ -1,19 +1,36 @@
-let colorlist = ["gold", "yellow", "turquoise", "red"];
+
 
 function setup() {
-    //this function runs once when the webpage is loaded
-    //within this function, you can use p5
-    createCanvas(windowWidth * 0.8, windowHeight * 0.8);
-    background(255);
-}
+    createCanvas(windowWidth, 400, WEBGL);
+    normalMaterial();
+  }
 
-function draw() {
-    //this functions runs many times every second!
-    //within this function, you can use p5 syntax
+  function draw() {
+    background(200, 10, 50);
     noStroke();
-    fill(random(colorlist));
-    ellipse(mouseX, mouseY, 25, 25);
+smooth();
+
+createVector(6, 6, 6)
+
+    let locX = mouseX - width / 6;
+  let locY = mouseY - height / .6;
+    orbitControl(5, 5, 10);
+    rotateX(10);
+    rotateY(10);
+    pointLight(15, 200, 50, locX, locY, 0);
+  noStroke();
+
+   
+colorMode(RGB, 100, 200, 166);
+for (let i = 0; i < 100; i++) {
+  for (let j = 0; j < 100; j++) {
+    sphere(i, j, 35);
+    sphere(i, j);
+  }
+  smooth(200);
+  sphere(90);
+  scale(.2, 0.5, .8);
+
+
 }
-
-
-//outside of the setup and draw functions (which are automatically called) - the rest of your code here is plain old javascript
+  }
