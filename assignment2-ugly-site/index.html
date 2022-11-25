@@ -1,16 +1,142 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>WEBSITE TITLE HERE</title>
-    <link rel="stylesheet" type="text/css" href="./styles/style.css" media="screen" />
+  
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="./style.css" media="screen" />
+
+<style>
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(70, 208, 63);
+background-image: url('./assets/ocean.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(208, 63, 165);
+  padding: 0px;
+  text-align: center;
+  /* font-size: 35px;
+  color: white; */
+
+  background-image: url('./assets/gus.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+
+
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 10;
+  -ms-flex: 10;
+  flex: 10;
+  background: rgb(76, 12, 101);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+
+  padding: 0px;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 0;
+  -ms-flex: 0;
+  flex: 0;
+  background-color: #afc315;
+  padding: -20px;
+  background-image: url('./assets/gracie.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(235, 30, 156);
+  padding: 10px;
+  text-align: center;
+  color: white;
+  background-image: url('./assets/gracie.jpg');
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 1400) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
 </head>
-    
 <body>
-    Hello Today
-    
+
+<h1>UGlY WEBSITE</h1>
+
+<img src="./assets/gracie.jpg">
+
+<header>
+  <h2>Thanksgiving 2022</h2>
+  <h1>Maine</h1>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#"><h3>Gracie</h3></a><img src="./assets/gracie.jpg"></li>
+      <li><a href="#"><h3>Gus</h3></a><img src="./assets/gus.jpg"></li>
+      <li><a href="#"><h3>Beach</h3></a><img src="./assets/ocean.jpg"></li>
+
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Ogunquit</h1>
+    <h2>Maine</h2>
+    <p>coastal Maine town.</p>
+    <p>GrACiE and gUs</p><h3>WENT On</h3><h2>A Quest</h2><p>to find the beach on Thanksgiving day.</p>
+  </article>
+
+  <article>
+    <h1>Ogunquit</h1>
+    <h2>Maine</h2>
+    <p>coastal Maine town.</p>
+    <p>they found</p><h3>the ocean</h3><h2>and some turkey</h2><p>and SOME apple PiE TOO!!</p>
+  </article>
+
+
+  
+</section>
+
+<footer>
+  <h1>THE END! THE BEGINNING</h1>
+</footer>
+
 </body>
+</html>
 
-<script src="main.js"></script>
-
-</html> 
