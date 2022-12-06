@@ -2,16 +2,35 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEBSITE TITLE HERE</title>
     <link rel="stylesheet" type="text/css" href="./style.css" media="screen" />
-
+    <style> 
+      .box{
+          width: 100%;
+          height: 100%;            
+          position: absolute;
+          top: 10px;
+          left: 600px;
+          opacity: .8;  /* for demo purpose  */
+          z-index: 2;
+      }
+      .stack-top{
+          z-index: 9;
+          margin: 20px; /* for demo purpose  */
+      }
+  </style>
   
 </head>
     
-<body>
+<body class=dragscroll>
 
-
-    <!-- <div class="imagemapDiv"> -->
+  <div class="box"><img src="./assets/img/IMG_4409_collage_0001_image-1.png"></div>
+  <!-- <div class="bstack-top"><img src="./assets/img/DAVID_BOWIE_THE+BUDDHA+OF+SUBURBIA-413716.jpeg"></div> -->
+<!--     
+    
+    </div> --> -->
+    <!-- <div class="imagemapDiv">
 <!-- <center> -->
 
     <!-- <h1 class="homepagetitle">
@@ -19,20 +38,14 @@
         target="_blank"
         style="text-decoration:none">DAVID BOWIE</a>
     </h1> -->
-
-    <img src="./assets/img/IMG_4409.png" alt="BOWIECOLLAGE" usemap="#workmap" heightWindow width="8000">
+    <div class="stack-top">
+    <img src="./assets/img/IMG_4409_collage.png" alt="BOWIECOLLAGE" usemap="#workmap" width="3000px" Height="3966px">
 <map name="workmap">
-    <area shape="rect" coords="0,40,130,190" alt="Bowie_album image of Ziggy" href="Ziggy.htm">
-    <area shape="rect" coords="160,110,240,280" alt="Bowie_album image of Earthling" href="Earthling.htm">
-    <area shape="rect" coords="280,150,350,290" alt="Bowie_album image for Aladdin Sane" href="AladdinSane.htm">
-    <area shape="rect" coords="420,110,550,290" alt="yellowsuit" href="Diamonddogs.htm">
-    <area shape="rect" coords="500,520,400,620" alt="Bowie_album image of Man who sold the world" href="Mansoldworl.htm">
-    <area shape="rect" coords="120,450,220,600" alt="Bowie_album image of Hunky Dory" href="HunkyDory.htm">
-    <area shape="rect" coords="190,220,280,330" alt="Bowie_around1999" href="late1990s.htm">
-    <area shape="rect" coords="240,220,350,480" alt="Bowie_ziggy years_fashion" href="Ziggy.htm">
-    <area shape="rect" coords="80,40,130,280" alt="Bowie_album image of Diamond dogs" href="Diamonddogs.htm">
-    
+    <area shape="rect" coords="16,243,519,971" alt="Bowie_album image of Ziggy" href="Ziggy.htm">
+    <area shape="rect" coords="1409,803,1800,2419" alt="Bowie_album image of Ziggy" href="AladdinSane.htm">
+    <area shape="rect" coords="1273,2497,1479,1658" alt="Bowie_album image of Ziggy" href="Ziggy.htm">
   </map>
+  </div>
 <!-- 
   <h3 class="homepagetext">Click around the image to find out more about David Bowie's life.
 </h3>
@@ -40,7 +53,7 @@
   <hr color="red" align="right" width="480"> -->
 
 <!-- </center> -->
-</div>
+<!-- </div> -->
 <!-- 
 <nav>
     <ul>
@@ -55,5 +68,5 @@
 
 <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
 <script src="main.js"></script>
-
+<script src="./scripts/dragscroll.js"></script>
 </html> 
