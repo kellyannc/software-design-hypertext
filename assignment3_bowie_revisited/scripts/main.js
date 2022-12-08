@@ -35,4 +35,7 @@ function setup() {
         drawThing(col * 150 + 85, row * 2 + 10);
       }
     }
+
   }
+
+  
