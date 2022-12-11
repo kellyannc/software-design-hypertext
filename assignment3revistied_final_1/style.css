@@ -2,7 +2,7 @@ background
 
 body { margin-left: 9%;
   margin-right: 9%;
-}
+  }
 
 h1 {
  color:rgb(90, 16, 160);
@@ -68,3 +68,7 @@ p {
 }
 
 cursor: default;
+
+.dropshadowimg
+    {
+    box-shadow: 800px 800px 800px rgb(72, 0, 0); }
